@@ -20,3 +20,17 @@ source /etc/profile
 export PATH=/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin
 
 ```
+
+# jenkins 安装（war）
+
+```
+# 下载 war
+wget https://mirrors.tuna.tsinghua.edu.cn/jenkins/war-stable/2.138.2/jenkins.war
+
+# 后台启动，默认，8080 端口
+nohup java -jar jenkins.war
+
+
+```
+
+
