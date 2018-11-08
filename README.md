@@ -23,11 +23,10 @@ chmod a+x install_android_sdk.sh
 ./install_android_sdk.sh
 
 # set Env /etc/profile
-
 ANDROID_HOME=/home/android/sdk
 export PATH=${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:$PATH
-
 source /etc/profile
+# 或者：export PATH=/home/android/sdk/tools:/home/android/sdk/platform-tools:$PATH
 
 # 如果 profile 修改出错，导致系统命令无效，可用下面命令重置😂
 export PATH=/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin:/bin:/sbin
