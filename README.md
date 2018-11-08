@@ -24,7 +24,7 @@ chmod a+x install_android_sdk.sh
 
 # set Env /etc/profile
 
-ANDROID_HOME=
+ANDROID_HOME=/home/android/sdk
 export PATH=${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools:$PATH
 
 source /etc/profile
