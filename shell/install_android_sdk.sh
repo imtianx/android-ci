@@ -10,7 +10,9 @@ ANDROID_HOME=/home/android/sdk
 SDK_NAME=sdk-tools-linux-${SDK_TOOLS_VERSION}.zip
 
 # download sdk tools
-wget http://dl.google.com/android/repository/${SDK_NAME}
+if [ ! -f ${SDK_NAME} ]; then
+  wget http://dl.google.com/android/repository/${SDK_NAME};
+fi
 rm -rf ${ANDROID_HOME}
 mkdir -p ${ANDROID_HOME}
 unzip -qd ${ANDROID_HOME} ${SDK_NAME}
