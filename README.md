@@ -16,6 +16,8 @@ nohup java -jar jenkins.war
 
 ## linux 安装 android sdk
 
+@2020-12-23 目前使用 commandlinetools 安装，可使用脚本 [install_android_sdk2.sh](/shell/install_android_sdk2.sh)
+
 ```
 # sdk platform  28
 curl https://raw.githubusercontent.com/imtianx/android-ci/master/shell/install_android_sdk.sh -o  install_android_sdk.sh --progress 
